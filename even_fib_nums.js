@@ -5,7 +5,7 @@
  * @param  {Number} maxFibValue
  * @return {Number} sum
  */
-function _sumFibs( maxFibValue ) {
+function _sumFibs(maxFibValue) {
   var sum = 0;
 
   // do your work here
@@ -13,10 +13,10 @@ function _sumFibs( maxFibValue ) {
   let secondFib = 1;
   let thirdFib = 0;
 
-  while(thirdFib <= maxFibValue){
+  while (thirdFib <= maxFibValue) {
     thirdFib = firstFib + secondFib;
-    if(thirdFib%2 === 0){
-      sum+=thirdFib;
+    if (thirdFib % 2 === 0) {
+      sum += thirdFib;
     }
     firstFib = secondFib;
     secondFib = thirdFib;
@@ -25,7 +25,7 @@ function _sumFibs( maxFibValue ) {
 }
 
 // bonus round
-function _highestFibonacciNumber (maxFibValue){
+function _highestFibonacciNumber(maxFibValue) {
   var highest = 0;
 
   //define your base case, validate your input
@@ -34,7 +34,7 @@ function _highestFibonacciNumber (maxFibValue){
   let thirdFib = 0;
 
   //do your work here
-  while(thirdFib <= maxFibValue){
+  while (thirdFib <= maxFibValue) {
     thirdFib = firstFib + secondFib;
     firstFib = secondFib;
     secondFib = thirdFib;
@@ -44,7 +44,7 @@ function _highestFibonacciNumber (maxFibValue){
 };
 
 //stretch goals
-function _sumFibs2( maxFibValue ) {
+function _sumFibs2(maxFibValue) {
   var sum = 0;
 
   // do your work here
@@ -52,10 +52,10 @@ function _sumFibs2( maxFibValue ) {
   let secondFib = 1;
   let thirdFib = 0;
 
-  while(thirdFib <= maxFibValue){
+  while (thirdFib <= maxFibValue) {
     thirdFib = firstFib + secondFib;
-    if(thirdFib%2 === 0 || thirdFib%5 === 0){
-      sum+=thirdFib;
+    if (thirdFib % 2 === 0 || thirdFib % 5 === 0) {
+      sum += thirdFib;
     }
     firstFib = secondFib;
     secondFib = thirdFib;
@@ -69,7 +69,7 @@ function _sumFibs2( maxFibValue ) {
  * You must be at least level 10 to understand.
  */
 module.exports = {
-  sumFibs : _sumFibs,
-  highestFibonacciNumber : _highestFibonacciNumber,
-  sumFibs2 : _sumFibs2
+  sumFibs: _sumFibs,
+  highestFibonacciNumber: _highestFibonacciNumber,
+  sumFibs2: _sumFibs2
 };
